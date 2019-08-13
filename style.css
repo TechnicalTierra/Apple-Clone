@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***** ***** End of CSS Reset ***** ******/
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/****** ***** End of Setup ***** *****/
+
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+/********** header **********/
+nav {
+  background-color: #333;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navbar > img {
+  margin: 0;
+
+}
+#navbar > a {
+  padding-right: 40px;
+}
+
+/*
+#nav-bar .image-links a:hover {
+  color: yellow;  /*WHY WONT YOU HOVERRRRRR??????
+}
+*/
+
+/********** product info - hero **********/
+.container {
+  content: center;
+}
+
+.product-iphone-6s {
+  margin: 10px auto;
+  float: left;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+div.product-info {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20%;
+}
+
+.product-info-blurb {
+  margin: 10px 0;
+  font-size: 35px;
+  color: #333;
+  text-align: center;
+  width: 500px;
+  font-weight: 300;
+}
+
+.product-links {
+  font-size: 22px;
+  color: #08c;
+}
+
+.product-links a:link   {
+  text-decoration: none;
+}
+
+.product-links a:visited {
+  color: #08c;
+}
+.product-links a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+/********** images - sub hero **********/
+
+.sub-hero {
+  clear: left;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+
+#apple-watch {
+  background-image: url("./images/watch_large.jpg");
+}
+
+#ipad-pro {
+  background-image: url("./images/ipad_pro_large.jpg");
+}
+
+#accessories {
+  background-image: url("./images/accessories_large.jpg");
+}
+
+#macbook {
+  background-image: url("./images/macbook_large.jpg");
+}
+
+
+/***** adapter recall link*****/
+.recall-program-link {
+  clear: left;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+
+.recall-program-link a:link {
+  text-decoration: none;
+}
+.recall-program-link a:visited {
+  color: #08c;
+}
+.recall-program-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*********** FOOTER **********/
+footer {
+  background-color: #EAEAEA;
+  margin: 0 auto;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+
+}
+
+.col {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+
+}
+.col a:link {
+  text-decoration: none;
+  /*line-height: 1.5;*/
+}
+.col a:visited {
+  color: grey;
+}
+.col a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.col a:active {
+  color: grey;
+}
+.bold-footer {
+  font-weight: bold;
+}
+
+.footer-apple-reseller {
+  clear: left;
+  text-align: left;
+  color: grey;
+}
+.footer-apple-reseller a:link {
+  color: #08c;
+  text-decoration: none;
+}
+.footer-apple-reseller a:visited {
+
+  color: #08c;
+}
+.footer-apple-reseller a:hover {
+  color: black;
+  text-decoration: underline;
+}
+/***** *****/
+hr {
+  color: grey;
+  opacity: 0.2;
+}
+/***** ******/
+
+.footer-footer {
+  display: inline;
+  color: grey;
+}
+.footer-footer li {
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer-footer. a:link {
+  color: grey;
+  text-decoration: none;
+}
+.footer-footer a:hover {
+  color: black;
+}
+.footer-footer a:visited {
+  color: grey;
+}
+
+#usa-footer {
+  float: right;
+}
+
+#usa {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */
